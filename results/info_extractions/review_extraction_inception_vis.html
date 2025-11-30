@@ -1,0 +1,270 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+60
+A peer-reviewed electronic journal 
+published by the Institute for Ethics 
+and 
+Emerging Technologies
+ISSN 1541-0099
+21(1) – July 2010
+Film review: Inception
+Marcelo Rinesi
+marcelo.rinesi@gmail.com
+Journal of Evolution and Technology - Vol. 21 Issue 1 – July 2010 - pgs 60-61
+http://jetpress.org/v21/rinesi.htm
+The protagonist of Inception (dir. Christopher Nolan, 2010), Cobb, leads a team of thieves with the 
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">unlikely speciality</span> of entering people’s dreams and extracting information from them. Cobb is <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">not a 
+criminal by choice</span>; he faces a murder charge that makes it impossible for him to apply his skills of dream 
+architecture and exploration in a legal way, as well as barring him from entering the United States and 
+seeing his two children again. As is usual in all big heist movies (a genre that supplies Inception with its 
+surface structure), he’s made an offer he can’t refuse: in exchange for performing the <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">seemingly 
+impossible feat</span> of inception — planting an idea in someone’s mind instead of stealing information from it 
+— his <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">powerful prospective employer</span> will make the charges against him disappear and ensure his 
+entrance into the United States.
+Of course, the job will turn out to be <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">more dangerous than expected</span>, and Cobb’s personal baggage, which 
+is very much related to the murder he has been charged with, <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">complicates matters further</span>. During the 
+movie we discover that Cobb and his wife spent fifty years in a dream-within-a-dream-within-a-dream-
+within-a-dream he refers to as “Limbo”  (subjective time passes exponentially faster the further you go 
+down the rabbit hole). During that time his wife forgot or chose to forget the oneiric nature of the reality 
+they were experiencing, and the only way Cobb found of convincing her to return was to plant into the 
+deeper recesses of her mind the idea that the reality she saw was a dream, and only by killing themselves 
+inside the dream they could go back to reality. This was, indeed, an inception... and it <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">ended 
+catastrophically for them</span>, as <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">the idea was still influencing Mal after they woke up, prompting her to kill 
+herself while framing her husband for her death</span>. Not only <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">was Cobb forced to flee the United States 
+leaving his children behind</span>, but <span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">the relentless persecution inside his dreams by a vindictive “Mal” (a 
+projection of his subconscious guilt) made dreams a dangerous place for him</span>.
+<span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">The movie glosses over any technical difficulty in accessing other people’s dreams</span>. <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">The main difficulty 
+lies in keeping the target unaware that they are in a dream, while always knowing yourself whether you 
+are in a dream or not</span>. Like professionally paranoid career con men, <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">Cobb and his team are always 
+suspicious of the reality they find themselves in</span>. <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">The key to both recognizing and escaping dreams is 
+physicality</span>, in the form of <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">material objects with specific signatures of weight and balance that other 
+dream architects would find impossible to replicate</span>, and in the wake response of in-dream physical impact 
+or drowning. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">Matter and force, the physical world, is the only lifeline they have to get back to reality</span>
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+61
+(labyrinths are often mentioned in the movie, and it’s no coincidence, in one way or another, than the 
+latest addition to Cobb’s team is a young architect called Ariadne).
+But <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">there’s a subtler, more familiar form of dream the protagonist of Inception finds himself trapped in</span>. 
+<span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">Although aware that the “Mal” that appears in his and other people’s dreams is ultimately a projection of 
+his subconscious, he refers to her and interacts with her as if she were his wife</span>. Although seldom in such a 
+literal way, most of us do carry inside ourselves ghosts of people we have lost, some of them not at all 
+happy with us, and <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">the climactic moment of the movie happens when Cobb is finally able to see that the 
+woman inside his dreams is not his wife, and, if not let go of the guilt, at least let go of his fabrication of 
+her ghost</span>. <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">Inception offers no certainty in ontological terms</span>; despite its obvious similarity with The
+Matrix, there is no absolute ground level of reality accessible to either the protagonists or the viewers, and 
+even the existence of such a reality is left undecided. However, in the emotional counterpart to this 
+argument, <span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">the movie takes a definite stand on the difference between Mal and Cobb’s dream and 
+nightmare of her</span>. In a way reminiscent of other movies like AI, the “reality of the real” is put in doubt, but 
+not the reality of love and the loved one. <span class="lx-highlight" data-idx="21" style="background-color:#D2E3FC;">Perhaps to question both at the same time would be too 
+unsettling</span>.
+Time itself deserves a separate mention. Although <span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">the exponential speedup of subjective time while in the 
+shared dream state is used very effectively as a narrative device and to underscore the psychological 
+danger of Limbo</span> (where minutes of “real time” are experienced as decades of isolation), <span class="lx-highlight" data-idx="23" style="background-color:#D2E3FC;">none of the 
+potential implications and uses of this extraordinary fact is explored any further</span>. This is understandable, 
+given the potential complexity of the issues raised, but nonetheless frustrating. Time is a key element of 
+both our perception of reality and our experience of ourselves, and <span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">the way in which the movie moves 
+between different realms of subjective time is at least as powerful a premise as the (certainly much more 
+visually appealing) ways in which movie characters manipulate the perceived architecture inside dreams</span>.
+Ultimately, <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">the movie itself is a dream</span>, a shared unreality that it’s not so much a logical exploration of its 
+premises as <span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">a visible manifestation of our ontological anxieties</span>. As humans, and even more so as 
+technology-using humans, we show a remarkable capability to immerse ourselves in increasingly 
+sophisticated symbolic worlds, from books to online games to stock markets. At times, if not most of the 
+time, these worlds feel the only real ones. There’s no need to postulate Matrix- or Inception-like 
+technologies to observe that these worlds are becoming richer and more complex, and that we are 
+spending more and more of our lives in them. This is <span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">not necessarily a new or negative development</span> 
+(reading still being one of the most effective technologies of both Virtual Reality and inception), but it’s 
+not surprising to find ourselves <span class="lx-highlight" data-idx="28" style="background-color:#D2E3FC;">worrying at times about the depth and nature of our dreams</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="28" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/29</span> |
+          Pos <span id="posInfo">[430-449]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "unlikely speciality", "color": "#C8E6C9", "startPos": 430, "endPos": 449, "beforeText": "0 - pgs 60-61\nhttp://jetpress.org/v21/rinesi.htm\nThe protagonist of Inception (dir. Christopher Nolan, 2010), Cobb, leads a team of thieves with the \n", "extractionText": "unlikely speciality", "afterText": " of entering people\u2019s dreams and extracting information from them. Cobb is not a \ncriminal by choice; he faces a murder charge that makes it impossibl", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">thieves&#x27; speciality</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">unlikely speciality</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "not a criminal by choice", "color": "#C8E6C9", "startPos": 524, "endPos": 549, "beforeText": "r Nolan, 2010), Cobb, leads a team of thieves with the \nunlikely speciality of entering people\u2019s dreams and extracting information from them. Cobb is ", "extractionText": "not a \ncriminal by choice", "afterText": "; he faces a murder charge that makes it impossible for him to apply his skills of dream \narchitecture and exploration in a legal way, as well as barr", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Cobb</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">not a criminal by choice</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "seemingly impossible feat", "color": "#C8E6C9", "startPos": 941, "endPos": 967, "beforeText": "ll big heist movies (a genre that supplies Inception with its \nsurface structure), he\u2019s made an offer he can\u2019t refuse: in exchange for performing the ", "extractionText": "seemingly \nimpossible feat", "afterText": " of inception \u2014 planting an idea in someone\u2019s mind instead of stealing information from it \n\u2014 his powerful prospective employer will make the charges ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">feat of inception</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">seemingly impossible</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "powerful prospective employer", "color": "#C8E6C9", "startPos": 1065, "endPos": 1094, "beforeText": "change for performing the seemingly \nimpossible feat of inception \u2014 planting an idea in someone\u2019s mind instead of stealing information from it \n\u2014 his ", "extractionText": "powerful prospective employer", "afterText": " will make the charges against him disappear and ensure his \nentrance into the United States.\nOf course, the job will turn out to be more dangerous th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">prospective employer</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">powerful</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "more dangerous than expected", "color": "#C8E6C9", "startPos": 1227, "endPos": 1255, "beforeText": "spective employer will make the charges against him disappear and ensure his \nentrance into the United States.\nOf course, the job will turn out to be ", "extractionText": "more dangerous than expected", "afterText": ", and Cobb\u2019s personal baggage, which \nis very much related to the murder he has been charged with, complicates matters further. During the \nmovie we d", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the job</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">more dangerous than expected</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "complicates matters further", "color": "#C8E6C9", "startPos": 1354, "endPos": 1381, "beforeText": "ob will turn out to be more dangerous than expected, and Cobb\u2019s personal baggage, which \nis very much related to the murder he has been charged with, ", "extractionText": "complicates matters further", "afterText": ". During the \nmovie we discover that Cobb and his wife spent fifty years in a dream-within-a-dream-within-a-dream-\nwithin-a-dream he refers to as \u201cLim", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Cobb&#x27;s personal baggage</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">complicates matters further</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "ended catastrophically for them", "color": "#C8E6C9", "startPos": 2010, "endPos": 2042, "beforeText": "reality she saw was a dream, and only by killing themselves \ninside the dream they could go back to reality. This was, indeed, an inception... and it ", "extractionText": "ended \ncatastrophically for them", "afterText": ", as the idea was still influencing Mal after they woke up, prompting her to kill \nherself while framing her husband for her death. Not only was Cobb ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The ending</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">ended catastrophically</span>}</div>"}, {"index": 7, "class": "audience_impact", "text": "the idea was still influencing Mal after they woke up, prompting her to kill herself while framing her husband for her death", "color": "#D2E3FC", "startPos": 2047, "endPos": 2172, "beforeText": " by killing themselves \ninside the dream they could go back to reality. This was, indeed, an inception... and it ended \ncatastrophically for them, as ", "extractionText": "the idea was still influencing Mal after they woke up, prompting her to kill \nherself while framing her husband for her death", "afterText": ". Not only was Cobb forced to flee the United States \nleaving his children behind, but the relentless persecution inside his dreams by a vindictive \u201cM", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">shock, horror</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The idea influencing Mal</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 8, "class": "audience_impact", "text": "Cobb was forced to flee the United States leaving his children behind", "color": "#D2E3FC", "startPos": 2183, "endPos": 2253, "beforeText": " for them, as the idea was still influencing Mal after they woke up, prompting her to kill \nherself while framing her husband for her death. Not only ", "extractionText": "was Cobb forced to flee the United States \nleaving his children behind", "afterText": ", but the relentless persecution inside his dreams by a vindictive \u201cMal\u201d (a \nprojection of his subconscious guilt) made dreams a dangerous place for h", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">sadness, sympathy</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The events of the film</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 9, "class": "audience_impact", "text": "the relentless persecution inside his dreams by a vindictive \u201cMal\u201d (a projection of his subconscious guilt) made dreams a dangerous place for him", "color": "#D2E3FC", "startPos": 2259, "endPos": 2405, "beforeText": "ng her to kill \nherself while framing her husband for her death. Not only was Cobb forced to flee the United States \nleaving his children behind, but ", "extractionText": "the relentless persecution inside his dreams by a vindictive \u201cMal\u201d (a \nprojection of his subconscious guilt) made dreams a dangerous place for him", "afterText": ".\nThe movie glosses over any technical difficulty in accessing other people\u2019s dreams. The main difficulty \nlies in keeping the target unaware that the", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">fear, anxiety</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The persecution by Mal</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "The movie glosses over any technical difficulty in accessing other people\u2019s dreams", "color": "#C8E6C9", "startPos": 2407, "endPos": 2489, "beforeText": "t the relentless persecution inside his dreams by a vindictive \u201cMal\u201d (a \nprojection of his subconscious guilt) made dreams a dangerous place for him.\n", "extractionText": "The movie glosses over any technical difficulty in accessing other people\u2019s dreams", "afterText": ". The main difficulty \nlies in keeping the target unaware that they are in a dream, while always knowing yourself whether you \nare in a dream or not. ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie&#x27;s technical aspects</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">glosses over any technical difficulty</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "The main difficulty lies in keeping the target unaware that they are in a dream, while always knowing yourself whether you are in a dream or not", "color": "#C8E6C9", "startPos": 2491, "endPos": 2637, "beforeText": "of his subconscious guilt) made dreams a dangerous place for him.\nThe movie glosses over any technical difficulty in accessing other people\u2019s dreams. ", "extractionText": "The main difficulty \nlies in keeping the target unaware that they are in a dream, while always knowing yourself whether you \nare in a dream or not", "afterText": ". Like professionally paranoid career con men, Cobb and his team are always \nsuspicious of the reality they find themselves in. The key to both recogn", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The difficulty of dream manipulation</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">main difficulty</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "Cobb and his team are always suspicious of the reality they find themselves in", "color": "#C8E6C9", "startPos": 2684, "endPos": 2763, "beforeText": "rget unaware that they are in a dream, while always knowing yourself whether you \nare in a dream or not. Like professionally paranoid career con men, ", "extractionText": "Cobb and his team are always \nsuspicious of the reality they find themselves in", "afterText": ". The key to both recognizing and escaping dreams is \nphysicality, in the form of material objects with specific signatures of weight and balance that", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Cobb and his team&#x27;s state of mind</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">always suspicious</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "The key to both recognizing and escaping dreams is physicality", "color": "#C8E6C9", "startPos": 2765, "endPos": 2828, "beforeText": "\nare in a dream or not. Like professionally paranoid career con men, Cobb and his team are always \nsuspicious of the reality they find themselves in. ", "extractionText": "The key to both recognizing and escaping dreams is \nphysicality", "afterText": ", in the form of material objects with specific signatures of weight and balance that other \ndream architects would find impossible to replicate, and ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Recognizing and escaping dreams</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">The key...is physicality</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "material objects with specific signatures of weight and balance that other dream architects would find impossible to replicate", "color": "#C8E6C9", "startPos": 2845, "endPos": 2972, "beforeText": "s team are always \nsuspicious of the reality they find themselves in. The key to both recognizing and escaping dreams is \nphysicality, in the form of ", "extractionText": "material objects with specific signatures of weight and balance that other \ndream architects would find impossible to replicate", "afterText": ", and in the wake response of in-dream physical impact \nor drowning. Matter and force, the physical world, is the only lifeline they have to get back ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Material objects in dreams</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">impossible to replicate</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "Matter and force, the physical world, is the only lifeline they have to get back to reality", "color": "#C8E6C9", "startPos": 3041, "endPos": 3132, "beforeText": "eight and balance that other \ndream architects would find impossible to replicate, and in the wake response of in-dream physical impact \nor drowning. ", "extractionText": "Matter and force, the physical world, is the only lifeline they have to get back to reality", "afterText": "\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\n61\n(labyrinths are often mentioned in the movie, and it\u2019s no coincidence, in one way or another, than the \nlatest addition to Cob", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The physical world</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">the only lifeline</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "there\u2019s a subtler, more familiar form of dream the protagonist of Inception finds himself trapped in", "color": "#C8E6C9", "startPos": 3333, "endPos": 3433, "beforeText": "oned in the movie, and it\u2019s no coincidence, in one way or another, than the \nlatest addition to Cobb\u2019s team is a young architect called Ariadne).\nBut ", "extractionText": "there\u2019s a subtler, more familiar form of dream the protagonist of Inception finds himself trapped in", "afterText": ". \nAlthough aware that the \u201cMal\u201d that appears in his and other people\u2019s dreams is ultimately a projection of \nhis subconscious, he refers to her and i", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The protagonist&#x27;s dream state</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">subtler, more familiar form of dream</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "Although aware that the \u201cMal\u201d that appears in his and other people\u2019s dreams is ultimately a projection of his subconscious, he refers to her and interacts with her as if she were his wife", "color": "#C8E6C9", "startPos": 3436, "endPos": 3624, "beforeText": "team is a young architect called Ariadne).\nBut there\u2019s a subtler, more familiar form of dream the protagonist of Inception finds himself trapped in. \n", "extractionText": "Although aware that the \u201cMal\u201d that appears in his and other people\u2019s dreams is ultimately a projection of \nhis subconscious, he refers to her and interacts with her as if she were his wife", "afterText": ". Although seldom in such a \nliteral way, most of us do carry inside ourselves ghosts of people we have lost, some of them not at all \nhappy with us, ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The protagonist&#x27;s perception of Mal</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">refers to her and interacts with her as if she were his wife</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "the climactic moment of the movie happens when Cobb is finally able to see that the woman inside his dreams is not his wife, and, if not let go of the guilt, at least let go of his fabrication of her ghost", "color": "#C8E6C9", "startPos": 3778, "endPos": 3985, "beforeText": "though seldom in such a \nliteral way, most of us do carry inside ourselves ghosts of people we have lost, some of them not at all \nhappy with us, and ", "extractionText": "the climactic moment of the movie happens when Cobb is finally able to see that the \nwoman inside his dreams is not his wife, and, if not let go of the guilt, at least let go of his fabrication of \nher ghost", "afterText": ". Inception offers no certainty in ontological terms; despite its obvious similarity with The\nMatrix, there is no absolute ground level of reality acc", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The climactic moment</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">able to see that the woman inside his dreams is not his wife, and, if not let go of the guilt, at least let go of his fabrication of her ghost</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "Inception offers no certainty in ontological terms", "color": "#C8E6C9", "startPos": 3987, "endPos": 4037, "beforeText": "lly able to see that the \nwoman inside his dreams is not his wife, and, if not let go of the guilt, at least let go of his fabrication of \nher ghost. ", "extractionText": "Inception offers no certainty in ontological terms", "afterText": "; despite its obvious similarity with The\nMatrix, there is no absolute ground level of reality accessible to either the protagonists or the viewers, a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Inception</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">no certainty in ontological terms</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "the movie takes a definite stand on the difference between Mal and Cobb\u2019s dream and nightmare of her", "color": "#C8E6C9", "startPos": 4304, "endPos": 4405, "beforeText": "he protagonists or the viewers, and \neven the existence of such a reality is left undecided. However, in the emotional counterpart to this \nargument, ", "extractionText": "the movie takes a definite stand on the difference between Mal and Cobb\u2019s dream and \nnightmare of her", "afterText": ". In a way reminiscent of other movies like AI, the \u201creality of the real\u201d is put in doubt, but \nnot the reality of love and the loved one. Perhaps to ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">takes a definite stand</span>}</div>"}, {"index": 21, "class": "audience_impact", "text": "Perhaps to question both at the same time would be too unsettling", "color": "#D2E3FC", "startPos": 4544, "endPos": 4610, "beforeText": "mare of her. In a way reminiscent of other movies like AI, the \u201creality of the real\u201d is put in doubt, but \nnot the reality of love and the loved one. ", "extractionText": "Perhaps to question both at the same time would be too \nunsettling", "afterText": ".\nTime itself deserves a separate mention. Although the exponential speedup of subjective time while in the \nshared dream state is used very effective", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">unsettling</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">Questioning both reality and love at the same time</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the viewers</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "the exponential speedup of subjective time while in the shared dream state is used very effectively as a narrative device and to underscore the psychological danger of Limbo", "color": "#C8E6C9", "startPos": 4662, "endPos": 4837, "beforeText": "lity of love and the loved one. Perhaps to question both at the same time would be too \nunsettling.\nTime itself deserves a separate mention. Although ", "extractionText": "the exponential speedup of subjective time while in the \nshared dream state is used very effectively as a narrative device and to underscore the psychological \ndanger of Limbo", "afterText": " (where minutes of \u201creal time\u201d are experienced as decades of isolation), none of the \npotential implications and uses of this extraordinary fact is ex", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The exponential speedup of subjective time</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">used very effectively</span>}</div>"}, {"index": 23, "class": "audience_impact", "text": "none of the potential implications and uses of this extraordinary fact is explored any further", "color": "#D2E3FC", "startPos": 4910, "endPos": 5005, "beforeText": "ly as a narrative device and to underscore the psychological \ndanger of Limbo (where minutes of \u201creal time\u201d are experienced as decades of isolation), ", "extractionText": "none of the \npotential implications and uses of this extraordinary fact is explored any further", "afterText": ". This is understandable, \ngiven the potential complexity of the issues raised, but nonetheless frustrating. Time is a key element of \nboth our percep", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">frustrating</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The lack of exploration of the implications of subjective time speedup</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the viewers</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "the way in which the movie moves between different realms of subjective time is at least as powerful a premise as the (certainly much more visually appealing) ways in which movie characters manipulate the perceived architecture inside dreams", "color": "#C8E6C9", "startPos": 5208, "endPos": 5451, "beforeText": "xity of the issues raised, but nonetheless frustrating. Time is a key element of \nboth our perception of reality and our experience of ourselves, and ", "extractionText": "the way in which the movie moves \nbetween different realms of subjective time is at least as powerful a premise as the (certainly much more \nvisually appealing) ways in which movie characters manipulate the perceived architecture inside dreams", "afterText": ".\nUltimately, the movie itself is a dream, a shared unreality that it\u2019s not so much a logical exploration of its \npremises as a visible manifestation ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie&#x27;s movement between realms of subjective time</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">at least as powerful a premise</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "the movie itself is a dream", "color": "#C8E6C9", "startPos": 5465, "endPos": 5492, "beforeText": "mise as the (certainly much more \nvisually appealing) ways in which movie characters manipulate the perceived architecture inside dreams.\nUltimately, ", "extractionText": "the movie itself is a dream", "afterText": ", a shared unreality that it\u2019s not so much a logical exploration of its \npremises as a visible manifestation of our ontological anxieties. As humans, ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">is a dream</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "a visible manifestation of our ontological anxieties", "color": "#C8E6C9", "startPos": 5577, "endPos": 5629, "beforeText": "chitecture inside dreams.\nUltimately, the movie itself is a dream, a shared unreality that it\u2019s not so much a logical exploration of its \npremises as ", "extractionText": "a visible manifestation of our ontological anxieties", "afterText": ". As humans, and even more so as \ntechnology-using humans, we show a remarkable capability to immerse ourselves in increasingly \nsophisticated symboli", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The movie</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">visible manifestation of our ontological anxieties</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "not necessarily a new or negative development", "color": "#C8E6C9", "startPos": 6114, "endPos": 6159, "beforeText": "technologies to observe that these worlds are becoming richer and more complex, and that we are \nspending more and more of our lives in them. This is ", "extractionText": "not necessarily a new or negative development", "afterText": " \n(reading still being one of the most effective technologies of both Virtual Reality and inception), but it\u2019s \nnot surprising to find ourselves worry", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">spending more and more of our lives in them</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">not necessarily a new or negative development</span>}</div>"}, {"index": 28, "class": "audience_impact", "text": "worrying at times about the depth and nature of our dreams", "color": "#D2E3FC", "startPos": 6304, "endPos": 6362, "beforeText": "pment \n(reading still being one of the most effective technologies of both Virtual Reality and inception), but it\u2019s \nnot surprising to find ourselves ", "extractionText": "worrying at times about the depth and nature of our dreams", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">worry</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">spending more and more of our lives in them</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">ourselves</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

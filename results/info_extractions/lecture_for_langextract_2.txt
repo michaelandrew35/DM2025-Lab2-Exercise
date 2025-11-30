@@ -1,0 +1,38 @@
+# LECTURE ANALYSIS: Assessing Academic Data Quality
+## Video Segment: 94:18
+
+[TRANSCRIPT - 94:18]
+rolled in the end of today's course. The grade of the quiz does not matter, but participation does. Please make sure you complete the quiz before you get the deadline after you get the account.
+
+[TRANSCRIPT - 94:20]
+Do you remember how to do?
+
+[TRANSCRIPT - 94:23]
+Oh, it's a student view. Really?
+
+[TRANSCRIPT - 94:28]
+No, this is student view. No, no, no, no. Just no.
+
+[TRANSCRIPT - 94:36]
+Something not right.
+
+[SLIDE DESCRIPTION]
+Assessing Academic Data Quality. Considering the table of average scores for various colleges over academic year 112, identify potential problems when interpreting the data. Select all that apply.
+
+[TRANSCRIPT - 94:40]
+Say I can see the result. Before there's something, say I can see the result.
+
+[TRANSCRIPT - 94:47]
+Oh, here, here. This is a quick summary, okay. I'm sorry. Guys, I'm sorry, sorry. This is a quiz summary.
+
+[TRANSCRIPT - 95:53]
+Okay, so we have around 100 students try to working with that. I...
+
+[TRANSCRIPT - 95:58]
+So, the first thing, this is academic year. You know, every year, every school will actually access student to fill in the student evaluation. How good your course is. And the student will fill it and blah, blah, blah. And then after that, our school, for example, Tsinghua, they will give you this mean. So they go through a mean. I say it's a position. And then after to do that, they will tell you, oh, in this last year, the year 113 and first semester, and then the mean for that college is 4.64, by the way, that score is extremely high. Do you know what it meant? If you hate the professor, just answer four. It's high number. A lot of student just say, oh, four is high number. No. It's um, four is not a high number.
+
+[TRANSCRIPT - 95:58]
+But if you actually try to see that, and then my question right here is, if you will say that the top two, actually, I think they are College of Humanities and Social Science because they are 4.64 and 4.68. And another one is Tsinghua College is 4.65 and 4.66. Compared to all other college, and then they have higher number. So why is a higher number? Because their student think that the most of courses are excellent. So can we say that course is good enough? Some student say it's true, some student say it's false. The answer is no.
+
+[TRANSCRIPT - 97:38]
+You see that kind of comparison everywhere. Which country is the happiest people over there? And then, and then, and then. Interesting part, you know, how to lower their score of the country who feel happy or not. If you introduce social network, the people will not happy. Social network people tell that is enough. Interesting part is people see happy faces on social network, pretty photo and that only increase their depression. Because they see, oh, they are so good. I'm so bad. We don't know their stage. Most of time, the happy is because they like only happy. So why do we actually say what is a potential problem to interpret a data like this? Have mean, have average, seem like that is possible for you to working on that mathematically. But then there's a problem. They first, they did not assume the data are homogeneous because data do homogeneous. They have the same attribute. You need to know homogeneity, actually is talking about the data have the same format or not. That's called homogeneity. But then actually
